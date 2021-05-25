@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmployeeHomeController">
+    <top>
+        <Pane prefHeight="89.0" prefWidth="622.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="logOutBtn" layoutX="792.0" mnemonicParsing="false" onAction="#logOut" prefHeight="91.0" prefWidth="107.0" text="Log Out">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Button>
+                <Label fx:id="welcomeLabel" layoutX="14.0" layoutY="16.0" prefHeight="53.0" prefWidth="481.0" text="Welcome,">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="empIdLabel" layoutX="502.0" layoutY="19.0" prefHeight="53.0" prefWidth="191.0" text="EmpID: ">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Region fx:id="addOrderRegion" layoutX="88.0" layoutY="118.0" onMousePressed="#goToAddOrder" prefHeight="300.0" prefWidth="300.0" />
+                <Region fx:id="ordersRegion" layoutX="511.0" layoutY="118.0" onMousePressed="#goToOrderHistory" prefHeight="300.0" prefWidth="300.0" />
+                <Label fx:id="ordersLabel" layoutX="569.0" layoutY="164.0" onMousePressed="#goToOrderHistory" prefHeight="139.0" prefWidth="164.0" text="Orders">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                </Label>
+                <Label fx:id="addOrderLabel" layoutX="117.0" layoutY="172.0" onMousePressed="#goToAddOrder" prefHeight="122.0" prefWidth="239.0" text="Add Order">
+                    <font>
+                        <Font size="48.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
